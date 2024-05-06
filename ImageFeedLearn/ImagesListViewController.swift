@@ -22,7 +22,7 @@ class ImagesListViewController: UIViewController, UITableViewDelegate, UITableVi
         guard let image = UIImage(named: photosName[indexPath.row]) else {
             return
         }
-
+        
         cell.cellImage.image = image
         cell.dateLabel.text = dateFormatter.string(from: Date())
         cell.dateLabel.layer.shadowColor = UIColor.black.cgColor
@@ -32,9 +32,9 @@ class ImagesListViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.dateLabel.layer.shadowOffset = CGSize(width: 0, height: 0)
         cell.dateLabel.layer.shadowRadius = 5.0
         cell.dateLabel.layer.shadowOpacity = 1.0
-
- 
-
+        
+        
+        
         let isLiked = indexPath.row % 2 == 0
         let likeImage = isLiked ? UIImage(named: "heart_no_active") : UIImage(named: "heart_active")
         cell.likeButton.setImage(likeImage, for: .normal)    }
@@ -45,13 +45,13 @@ class ImagesListViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ImagesListCell.reuseIdentifier, for: indexPath)
-
+        
         guard let imageListCell = cell as? ImagesListCell else {
             return UITableViewCell()
         }
-
+        
         configCell(for: imageListCell, with: indexPath)
-
+        
         return imageListCell
     }
     
