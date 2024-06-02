@@ -17,8 +17,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VJJ-k1-w0b">
-                                <rect key="frame" x="16" y="59" width="361" height="759"/>
-                                <color key="backgroundColor" red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="16" y="0.0" width="361" height="769"/>
+                                <color key="backgroundColor" red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ImagesListCell" rowHeight="200" id="llm-e4-GMI" customClass="ImagesListCell" customModule="ImageFeedLearn" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="361" height="200"/>
@@ -29,6 +29,7 @@
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="7YE-xy-IYt" userLabel="CellImage">
                                                     <rect key="frame" x="0.0" y="8" width="361" height="192"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                             <integer key="value" value="16"/>
@@ -53,7 +54,7 @@
                                                     <state key="normal" image="heart_no_active"/>
                                                 </button>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="Vxu-ap-P1m" secondAttribute="trailing" id="2qb-Jh-fgd"/>
                                                 <constraint firstItem="b2N-Go-Rr0" firstAttribute="top" secondItem="cCo-MQ-3Vh" secondAttribute="top" constant="10" id="8MD-31-csB"/>
@@ -66,6 +67,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="Vxu-ap-P1m" secondAttribute="bottom" constant="10" id="w3D-UB-CB6"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="20"/>
@@ -88,7 +90,7 @@
                         <color key="backgroundColor" red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottomMargin" secondItem="VJJ-k1-w0b" secondAttribute="bottomMargin" constant="8" id="EuY-Cs-Yjy"/>
-                            <constraint firstItem="VJJ-k1-w0b" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="N23-Dj-aZA"/>
+                            <constraint firstAttribute="top" secondItem="VJJ-k1-w0b" secondAttribute="top" id="N23-Dj-aZA"/>
                             <constraint firstItem="VJJ-k1-w0b" firstAttribute="left" secondItem="8bC-Xf-vdC" secondAttribute="leftMargin" id="VeK-C5-LEP"/>
                             <constraint firstAttribute="rightMargin" secondItem="VJJ-k1-w0b" secondAttribute="rightMargin" constant="20" id="rXm-4L-t8A"/>
                         </constraints>
@@ -111,10 +113,10 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0bM-8s-SKf">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <tabBarAppearance key="standardAppearance">
-                            <color key="backgroundColor" red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </tabBarAppearance>
                     </tabBar>
                     <connections>
@@ -190,7 +192,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="quj-Vw-Z4K"/>
-                        <color key="backgroundColor" red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ui8-0e-2O7" firstAttribute="leading" secondItem="quj-Vw-Z4K" secondAttribute="leading" id="APL-8k-oHy"/>
                             <constraint firstItem="PO4-HS-uGI" firstAttribute="leading" secondItem="quj-Vw-Z4K" secondAttribute="leading" constant="8" id="CTb-Ks-3ni"/>
