@@ -199,8 +199,8 @@
                             <constraint firstItem="f3P-2o-Mdo" firstAttribute="centerX" secondItem="quj-Vw-Z4K" secondAttribute="centerX" id="HIu-JL-alA"/>
                             <constraint firstItem="quj-Vw-Z4K" firstAttribute="bottom" secondItem="f3P-2o-Mdo" secondAttribute="bottom" constant="17" id="N4n-ve-3Qu"/>
                             <constraint firstItem="PO4-HS-uGI" firstAttribute="top" secondItem="quj-Vw-Z4K" secondAttribute="top" constant="8" id="gLk-Cx-RAv"/>
-                            <constraint firstItem="quj-Vw-Z4K" firstAttribute="trailing" secondItem="ui8-0e-2O7" secondAttribute="trailing" constant="-21" id="lmE-SP-RDG"/>
-                            <constraint firstAttribute="bottom" secondItem="ui8-0e-2O7" secondAttribute="bottom" constant="-44" id="nlj-ni-gEA"/>
+                            <constraint firstItem="quj-Vw-Z4K" firstAttribute="trailing" secondItem="ui8-0e-2O7" secondAttribute="trailing" id="lmE-SP-RDG"/>
+                            <constraint firstAttribute="bottom" secondItem="ui8-0e-2O7" secondAttribute="bottom" id="nlj-ni-gEA"/>
                             <constraint firstItem="ui8-0e-2O7" firstAttribute="top" secondItem="AGL-X4-qeC" secondAttribute="top" id="rzZ-MD-NtU"/>
                         </constraints>
                     </view>
