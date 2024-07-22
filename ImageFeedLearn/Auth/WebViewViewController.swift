@@ -14,6 +14,7 @@ protocol WebViewViewControllerDelegate: AnyObject {
 }
 
 final class WebViewViewController: UIViewController {
+    @IBOutlet weak var testWebView: WKWebView!
     
     @IBOutlet weak var webView: WKWebView!
     
@@ -37,7 +38,7 @@ final class WebViewViewController: UIViewController {
         let url = urlComponents.url!
 
         let request = URLRequest(url: url)
-        webView.load(request)
+        testWebView.load(request)
     }
 }
  
