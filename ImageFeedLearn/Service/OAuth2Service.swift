@@ -27,6 +27,7 @@ final class OAuth2Service {
         completion: @escaping (Result<String, Error>) -> Void
     ) {
         let request = makeOAuthTokenRequest(code: code)
+        print(request)
         let task = object(for: request) { [weak self] result in
             guard let self = self else { return }
             switch result {
