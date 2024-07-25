@@ -14,9 +14,11 @@ final class OAuth2Service {
     
      private (set) var authToken: String? {
          get {
+
              return OAuth2TokenStorage().token
          }
          set {
+
              guard let value = newValue else { return }
              OAuth2TokenStorage().token = value
          }
@@ -27,7 +29,7 @@ final class OAuth2Service {
         completion: @escaping (Result<String, Error>) -> Void
     ) {
         let request = makeOAuthTokenRequest(code: code)
-        print(request)
+
         let task = object(for: request) { [weak self] result in
             guard let self = self else { return }
             switch result {

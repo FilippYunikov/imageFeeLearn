@@ -24,4 +24,5 @@ final class OAuth2TokenStorage: OAuth2TokenStorageProtocol {
         set { userDefaults.set(newValue, forKey: Keys.token.rawValue) }
     }
 
+
 }
